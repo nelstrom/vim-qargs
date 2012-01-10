@@ -5,6 +5,6 @@ function! QuickfixFilenames()
   for quickfix_item in getqflist()
     let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
   endfor
-  return join(values(buffer_numbers))
+  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
 endfunction
 
