@@ -1,0 +1,1 @@
+For an example of usage, refer to the question [Search & replace using quickfix list in Vim](http://stackoverflow.com/a/5686810/128850).
